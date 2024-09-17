@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body> <!--Html semantico-->
+    <!--Barra de navegacion-->
+    <nav>
+        <!--Movimiento entre paginas web locales-->
+        <a href="#">Inicio</a>
+        <a href="./intro.html" style="font-size: 23px; background-color: red; padding: 10px; color: #fff;" >Introduccion</a>
+    </nav>
+    <!--Cabezera (seccion de la parte de arriba de la pagina)-->
+    <header>    
+    </header>
+    <!--Contenido mas relevante de la pagina-->
+    <main>
+        <!--Formularios-->
+        <form action="">
+            <!--Etiqueta para los input-->
+            <label for="name">Nombre</label>
+            <!--Entrada de datos de tipo texto-->
+            <input type="text" name="name" id="name" placeholder="Nombre aqui" required>
+            <label for="cumpleanos">Fecha de nacimiento</label>
+            <!--Input para fechas-->
+            <input type="date" name="cumpleanos" id="cumpleanos" required>
+            <!--Input para email-->
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" id="email" placeholder="Correo aqui" required>
+            <!--Entrada para las passwords-->
+            <label for="Contrasena">Contrasena</label>
+            <input type="password" name="Contrasena" id="Contrasena" required placeholder="Pon tu Contrasena aqui">
+            <!--Input de envio-->
+            <label for="enviar">Envia aqui</label>
+            <input type="submit" value="enviar">
+            <!--Listas en entrada de datos-->
+            <label for="pais">Pais</label>
+            <select name="pais" id="">
+                <option value="venezuela">venezuela</option>
+                <option value="Espana">Espana</option>
+                <option value="Colombia">Colombia</option>
+            </select>
+            
+        </form>
+    </main>
+    <!--Sections remplaza a divs comunes-->
+    <section id="nosotros"> <!--section#inicio>div*2>h2+p-->
+        <div>
+            <h2></h2>
+            <p></p>
+        </div>
+        <div>
+            <h2></h2>
+            <p></p>
+        </div>
+    </section>
+    <!--Contenido lateral de la pagina web-->
+    <aside>
+    </aside>
+    <!--Footer / pie de pagina-->
+    <footer>
+    </footer>
+</body>
+</html>
