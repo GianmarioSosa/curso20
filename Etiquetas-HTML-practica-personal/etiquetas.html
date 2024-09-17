@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica personal</title>
+</head>
+<body>
+    <header>
+        <h1>Practicando Etiquetas en HTML</h1>
+        <p>Esta practica es personal (investigando cada etiqueta por mi cuenta)</p>
+    </header>
+
+    <!--En el main pondre todas las etiquetas que no conocia indicando para que sirven-->
+    <main>
+        <!--Etiqueta abbr: sirve pora indicar el significado de una abreviacion-->
+        <p>El lenguague que estoy usando es <abbr title="Hipertext Markup Lenguage">HTML</abbr></p>
+        <br>
+        <!--Pones direccion de una manera semanticamente correcta. Visualmente funciona como i o em-->
+        <address>
+            Escrito por Gianmario Sosa
+            Visitame en: <a href="https://github.com/GianmarioSosa/curso20Lexpin">gianamriososa.comn</a>
+            Codigo Postal: 12345. Ciudad X - Pais Y
+        </address>
+        
+        <!--Hacer click en un area especifica de una imagen-->
+        <img src="imagen-setup.jpg" usemap="#image-map">
+        <!--ACLARAR IMPORTANTE: Las cord las saque de: http://www.image-map.net-->
+        <map name="image-map">
+            <area target="_blank" alt="imagen monitor" title="Monitor" href="https://www.manomano.es/p/fativo-escritorio-mesa-gaming-led-140-cm-mesa-gamer-grande-con-pie-ajustable-escritorio-gaming-pc-ergonomico-de-fibra-de-carbono-con-soporte-para-vasos-y-auriculares-48784018" coords="150,55,273,74,398,104,392,183,268,151,149,128,149,89,150,73" shape="poly">
+        </map>
+        <!--Crear citas a autores/articulos de manera correcta semanticamente-->
+        <blockquote cite="https://es.lipsum.com/#google_vignette"> <!--blockquoto sirve para citar la info y crea una sanfria-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel nihil unde sapiente quia nulla, dolorem harum animi atque sed illum. Error eveniet in dignissimos minima, culpa quam blanditiis adipisci!
+        </blockquote>
+        <!--Cite sirve para citar al autor y lo pone en cursiva-->
+        <cite>Lorem Ipsum</cite>
+        <!--Para citar un texto pequeno se usa q dentro del p-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<q> Nobis culpa consectetur itaque praesentium. Error non laudantium illo</q>, quia, ad labore, rem hic nobis magnam tempore expedita repellat laboriosam animi ut?</p>
+
+        <!--LISTAS DE DEFINICION-->
+        <dl><!--crea la lista-->
+            <dt><!--Crea el elemento de la lista-->
+                HTML
+            </dt>
+            <dd> <!--Definicion del elemento-->
+                Lenguaje de marcado de hipertexto
+            </dd>
+            <dt> CSS</dt>
+            <dd>Hoja de estilos en cascada</dd>
+            <dt>
+                JavaScript
+            </dt>
+            <dd>Funcionalidad a elementos de html y css :D</dd>
+        </dl>
+
+        <!--crear una linea de division en html-->
+        <hr>
+        <!--Barritas de progreso indicas min max y value--> 
+        <label for="vida">❤️</label>
+        <progress min="0" max="100" value="75" id="vida"></progress>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table border="1"><!--crear tabla-->
+            <!--crear fila con tr-->
+            <tr>
+                <th rowspan="5">curso</th>
+            </tr>
+            <tr>
+                <th colspan="2">HIPERTEXT</th>
+            </tr>
+            <tr>
+                <!--crear columna con td-->
+                <td>
+                    curso html
+                </td>
+                <td>
+                    50%
+                </td>
+            </tr>
+            <tr><!--CREAR ENCABEZADO EN TABLAS-->
+                <th colspan="2">estilos</th>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>0%</td>
+            </tr>
+        </table>
+
+        <!--inputs diferentes-->
+        <input type="color" name="color" id="color">
+
+        <input type="file" name="" id="">
+
+        <input type="radio" name="" id="">
+
+        <input type="checkbox" name="" id="">
+
+        <input type="range" name="" id="" min="0" max="100" step="50">
+    </main>
+</body>
+</html>
