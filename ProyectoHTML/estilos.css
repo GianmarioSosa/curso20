@@ -11,22 +11,23 @@
 .img__header{
     margin: 2vw;
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: solid 3px #fff;
 }
 
 .name__header{
-    position: absolute;
-    top: 5vh;
-    left: 15vw;
-    font-size: 50px;
+    display: flex;
+    
+    justify-content: center;
+    align-items:start;
 }
 
 .subtitle__header{
-    position: absolute;
-    top: 20vh;
-    left: 15.5vw;
+    display: flex;
+    
+    justify-content: center;
+    align-items:start;
 }
 
 hr{
