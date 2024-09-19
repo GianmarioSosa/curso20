@@ -1,0 +1,15 @@
+nav{
+    padding: 10px 20px;
+    display: flex;
+    /*Manjea EJE PRINCRIPAL DE LOS ELEMENTOS SOLO ES DISPLAY FLEX*/
+    justify-content: space-between;
+    /*Maneja elej everticaL*/
+    align-items: center;
+}
+
+nav > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
