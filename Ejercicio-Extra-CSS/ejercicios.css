@@ -1,0 +1,21 @@
+/*Se eliminan los estilos por defecto*/
+*{
+    margin: 0;
+    /*La tipografia realmente no va en el ejercicio, la agregue por gustos personales para poder apreciar mejor los textos*/
+    font-family: sans-serif;
+}
+
+/*La etiqueta main en el ejercicio al ir como una columna no le agrege ningun estilo, ya que es una columna predeterminadamente*/
+
+/*Selecciono los divs que estan dentro de la etiqueta main y los vuelvo una fila con display flex, alineo todo al centro tanto su eje "x" y "y" y para modificar la ubicacion de los parrafos use el atributo flex-direction usando el valor colum para que los p funcionen como una columna*/
+
+main > div{
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    padding: 10px 0;
+}
+
