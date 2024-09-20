@@ -5,7 +5,10 @@
     font-family: sans-serif;
 }
 
-/*La etiqueta main en el ejercicio al ir como una columna no le agrege ningun estilo, ya que es una columna predeterminadamente*/
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 /*Selecciono los divs que estan dentro de la etiqueta main y los vuelvo una fila con display flex, alineo todo al centro tanto su eje "x" y "y" y para modificar la ubicacion de los parrafos use el atributo flex-direction usando el valor colum para que los p funcionen como una columna*/
 
