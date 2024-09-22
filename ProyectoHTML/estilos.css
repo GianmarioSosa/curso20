@@ -1,140 +1,118 @@
-/*Esto es opcional y meramente visual*/
-
-*{
+*{  
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    color: #fff;
-    background-color: #999;
+    font-family:sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.img__header{
-    margin: 2vw;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    border: solid 3px #fff;
+body{
+    background-color: black;
 }
 
-.name__header{
-    display: flex;
-    
-    justify-content: center;
-    align-items:start;
-}
-
-.subtitle__header{
-    display: flex;
-    
-    justify-content: center;
-    align-items:start;
-}
-
-hr{
-    width: 85%;
-    margin: auto;
-}
-
-.aboutme{
-    font-weight: 500;
+header{
+    color: white;
+    border: 4px solid white;
+    border-radius: 15px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, black,  white);
 }
 
-.text__aboutme{
-    margin: auto;
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-.experiencia{
-    font-weight: 500;
-    margin: 30px;
-}
-
-.texto__laboral{
-    margin: auto;
-    width: 80%;
-    margin-bottom: 30px;
-}
-
-.laboral{
-    margin: 45px;
-}
-
-.Habilidades{
-    text-align: center;
-    margin-top: 30px;
-}
-
-ul{
-    text-align: center;
+.text_header {
     margin: 20px;
 }
 
-li{
-    list-style: none;
-    padding-bottom: 10px;
+.text_header:first-child {
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.Educacion{
-    margin-top: 30px;
-    text-align: center;
+.text_header:nth-last-child(2){
+    margin: 0px 20px;
+    font-size: 30px;
 }
 
-.colegio{
-    text-align: center;
-    padding-top: 20px;
+.img_header {
+    width: 200px;
+    align-self: flex-end;
+    margin-top: -160px;
+    border-radius: 10px;
 }
 
-.contacto{
-    text-align: center;
-    margin-top: 30px;
-}
-input{
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 2px #fff;
-    height: 50px;
+main{
+    margin: 30px;
+    align-items: start; 
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 
-label{
-    display: block;
-    padding-top: 10px;
+.container{
+    background-color: black;
+    color: white;
+    width: 30%;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.container > h2,p{
+    margin: 10px;
+}
+
+.habilidades{
+    background: linear-gradient(90deg, rgb(66, 66, 66), white);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.habilidades h2{
+    margin: 10px;
+}
+
+.habilidades > img{
+    margin: 13px;
+    width: 10vw;
 }
 
 form{
-
-    width: 19%;
-    margin: auto;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    border-radius: 10px;
 }
 
-.contac{
-    margin-top: 60px;
-    margin-left: 30px;
-    padding-top: 20px;
+form > h2{
+    margin: 10px;
 }
-.foot{
-    
-    margin-left: 20px;
-    padding-top: 10px;
-}
-footer h4, p, a{
+input{
+    box-sizing: content-box;
+    margin: 10px;
+    width: 43vw;
+    height: 30px;
+    display: flex;
+    border: none;
+    color: white;
     background-color: transparent;
-    
+    border-bottom: solid 2px white;
 }
 
-footer{
-    background-color: #924d4d;
-    position: relative;
+label{
+    margin-left: 10px;
 }
 
-.torneo{
-    width: 120px;
-    position: absolute;
-    top: 20%;
-    right: 20%;
+.Send{
+    background-color: black;
+    border: solid 2px black;
 }
 
-#ojala{
-    margin-bottom: 30px;
+.Send:hover{
+    color: black;
+    height: 40px;
+    background-color: white;
+    transition: 0.5s;
+    border-radius: 5px;
 }
