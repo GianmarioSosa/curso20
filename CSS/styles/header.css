@@ -1,0 +1,66 @@
+header {
+    /*Sistema de filas o columnas*/
+    display: grid;
+    /*Indicar cuantas columnas quiero y el tamano*/
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: linear-gradient(270deg, #00bfff, #0505ae);
+    background-size: 400% 400%;
+    animation: fondo 15s ease infinite;
+}
+
+header > div > img{
+    width: 80%;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    color: white;
+}
+
+.izquierda > h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.izquierda > h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.izquierda > div{
+    display: flex;
+    gap: 0;
+}
+
+.izquierda > div > input{
+    border-radius: 25px 0 0 25px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.izquierda > div > button{
+    border-radius: 0 25px 25px 0;
+    color: deepskyblue;
+    background-color: white;
+    border: none;
+    border-left: solid 5px deepskyblue;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fondo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
