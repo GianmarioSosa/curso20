@@ -59,6 +59,17 @@ header > div > img{
     align-items: center;
 }
 
+/*
+Pseudo elemento para dar estilo a parte especifica de un elemento
+after
+before
+first
+first-letter
+first-line
+selection
+placeholder
+*/
+
 @keyframes fondo {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
