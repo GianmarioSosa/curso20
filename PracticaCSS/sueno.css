@@ -1,0 +1,39 @@
+.sueno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px;
+    height: 39vh;
+    background-size: 100% 100%;
+}
+
+.sueno > div > h2{
+    font-size: 65px;
+}
+
+.sueno > div > p {
+    margin-top: 30px;
+    width: 80%;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sueno > div > img {
+    width: 55%;
+    height: 55%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 120px deepskyblue;
+}
+
+.sueno_izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sueno_derecha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
