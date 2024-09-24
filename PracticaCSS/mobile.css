@@ -1,0 +1,51 @@
+.mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px;
+    height: 59vh;
+    background-size: 100% 100%;
+}
+
+.mobile > div > h2{
+    font-size: 60px;
+}
+
+.mobile > div > p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.mobile > div > img {
+    width: 70%;
+}
+
+.izquierda3 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.derecha3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 12px;
+        color: white;
+}
+.mobile > div > button {
+background-color: #EA602E;
+border: none;
+border-radius: 10px;
+font-size: 20px;
+font-weight: 800;
+padding: 15px;
+width: 180px;
+color: white;
+margin-top: 80px;
+cursor: pointer;
+}
+
+.mobile > div > button:hover {
+    background-color: #ff5e23;
+}

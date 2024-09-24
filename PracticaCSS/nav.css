@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div {
+    padding: 0 30px;
+}
+
+nav > div > img { 
+    width: 200px;
+    cursor: pointer;
+}
+
+nav > div > p {
+    margin: 0 20px;
+    padding: 0 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-right: solid 2px black;
+    cursor: pointer;
+}
+
+.nav {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #1094A3;
+}
