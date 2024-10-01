@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+body{
+    background: #0F0F0F;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+aside{
+    height: 100vh;
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    main{
+        grid-template-columns: 5% 95%;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;;
+    }
+
+    aside > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    aside > div:hover{
+        background-color:  rgba(128, 128, 128, 0.411);
+    }
+
+    aside > div > p{
+        font-size: 10px;
+        font-style: italic;
+    }
+
+    aside > div > i {
+        font-size: 20px
+    };
+}

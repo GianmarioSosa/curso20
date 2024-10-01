@@ -1,0 +1,102 @@
+nav{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50%  50%;
+    justify-content: space-between;
+}
+
+nav > div{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+i{
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.mid_zone{
+    display: none;
+}
+
+.icons_derecha{
+    justify-content: end;
+    gap: 10px;
+}
+
+.icons > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.icons > div:hover{
+    background-color: rgba(128, 128, 128, 0.385);
+}
+
+#perfil > div{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+#perfil > div >p{
+    display: flex;
+    color: white;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    nav{
+        grid-template-columns: 25% 40%  25%;
+        justify-content: space-between;
+    }
+
+    .mid_zone{
+        display: flex;
+        gap: 0;
+    }
+
+    .mid_zone > input {
+        border: solid 1px gray;
+        border-right: none;
+        padding: 5px;
+        width: 100%;
+        font-size: 1.45em;
+        border-radius: 15px 0px 0px 15px;
+        color: white;
+        background: #0F0F0F;
+        padding-left: 20px;
+    }
+
+    .mid_zone > label {
+        margin-right: 30px;
+        border: solid 1px gray;
+        padding: 10px;
+        padding-left: 20px;
+        border-left: none;
+        font-size: 0.8em;
+        background-color: rgba(128, 128, 128, 0.385);
+        border-radius: 0 15px 15px 0;
+    }
+
+    .mid_zone > label > i {
+        color: white;
+        background-color: transparent;
+    }
+}
