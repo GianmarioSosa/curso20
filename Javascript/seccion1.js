@@ -53,3 +53,53 @@ var diferente = 5 != 5;
 var exactamente_diferente = 5 !== 5;
 var menor_que = 5 > 3
 var mayor_que = 5 < 3
+
+
+//operadores logicos
+
+var y = true && false;
+var o = true || false;
+var negacion = !true;
+
+
+// (Facil)
+var uno = !true || false;
+var dos = false && !false;
+var tres = true && !false;
+
+//(Medio)
+var cuatro = (5 === 5) || (!true);
+var cinco = (!0) || (5 < 0);
+var seis = (3 > 4) && (!0);   
+
+//Avanzado
+var siete = ( ((false || true) && (!false && true) )) || (true && false)
+var ocho = (6 === 3+3) && (9/3 >= 3);
+var nueve = (!(!false) || ( ("1" == 1)) && (!false === true) ); 
+
+//Hardcore
+var diez = !(!true) === !( !( 5 >= 5 ) );
+var once = !( true && (!true === !( !(8 === 4*2) )) );
+
+//Ultra-Hardcore
+var doce = !( true && (!true === !( !(16 === (4*2) + 8))) ) !== (false);
+
+//Leyenda
+var trece = !(((!(!(10 / 5 == "2") === false) != false) === ((5 * 5) <= (100 / 4))) && (!((1 + 1) !== (10 / 5)) !== (true)));
+
+//Condicionales
+/*
+  Nos ayudan a tomar decisiones en nuestro código
+*/
+var edad = 18;
+if (edad < 0 || edad > 130){
+  console.log("Edad no valida");
+} else if(edad < 18){
+  console.log("Eres menor de edad");
+} else if(edad >= 18){
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Edad no valida");
+}
+
+
