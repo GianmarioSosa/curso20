@@ -62,3 +62,6 @@ calculadora (10, '*' , 2)
 calculadora (10, '/' , 5)
 calculadora (5, '%' , 2)
 calculadora (5, '**' ,2)
+
+//Funcion con retorno
+function sumar (numero1 = 0, numero2 = 0)
