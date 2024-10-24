@@ -64,4 +64,57 @@ calculadora (5, '%' , 2)
 calculadora (5, '**' ,2)
 
 //Funcion con retorno
-function sumar (numero1 = 0, numero2 = 0)
+function sumar(numero1 = 0, numero2 = 0){
+  return numero1 + numero2;
+}
+
+console.log(sumar(10, 20));
+var resultado = sumar(30, 40);
+
+/*
+  Ejercicios de funciones con retorno
+*/
+
+function calcularIMC(peso = 0, altura = 0){
+  return peso / (altura * altura);
+}
+
+console.log(calcularIMC(70, 1.70)); //24.221453287197235
+
+function calcularAreaTriangulo(base = 0, altura = 0){
+  (base * altura) / 2;
+}
+
+console.log(calcularAreaTriangulo(10, 5)); //undefined
+
+function calcularAreaCirculo(radio = 0){
+  if( radio <= 0){
+    return "El radio debe ser mayor a 0";
+  } else if( typeof radio !== "number"){
+    return "El radio debe ser un número";
+  } else {
+    if( radio <= 5){
+      return "El radio debe ser mayor a 5";
+    }
+    return 3.14 * (radio * radio);
+  }
+}
+
+console.log(calcularAreaCirculo(2));
+
+function salirFinDeSemana(tiempo = false, dinero = false, ganas = false){
+  if(tiempo && dinero && ganas){
+    console.log("Saldré a divertirme");
+  } if (tiempo && dinero){
+    return "Saldré desganado";
+  } if(tiempo){
+    if(ganas){
+      console.log("Saldre a hacer ejecicio");
+    }
+    return "Saldré a matar el tiempo";
+  }
+  return "No saldré";
+}
+
+console.log(salirFinDeSemana(true, false, true));
+
