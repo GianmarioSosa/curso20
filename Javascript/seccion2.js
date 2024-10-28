@@ -159,3 +159,120 @@ Ejercicios de funciones con retorno y sin retorno. Debes determinar que imprime
   }
 
   console.log(hallarAreaCirculo(2)); //El radio debe ser mayor a 5
+
+  /*
+  Recursividad (Una funcion se llama a si misma)
+  */
+
+  function contar(numero){
+    if(numero >= 100){
+      return;
+    }
+    console.log(numero);
+    contar(numero + 10);
+  }
+
+  contar(0);
+
+  //funciones dentro de funciones
+  function calculadora()
+
+  function sumar(numero1 = 0, numero2 = 0) {
+    return numero1 + numero2;
+  }
+  
+  function restar(numero1 = 0, numero2 = 0) {
+    return numero1 - numero2;
+  }
+  
+  function multiplicar(numero1 = 0, numero2 = 0) {
+    return numero1 * numero2;
+  }
+  
+  function dividir(numero1 = 0, numero2 = 0) {
+    return numero1 / numero2;
+  }
+  
+  //Funciones dentro de funciones
+  function calculadora(numero1 = 0, numero2 = 0, operacion = "sumar") {
+    if (operacion === "sumar") {
+      return sumar(numero1, numero2);
+    } else if (operacion === "restar") {
+      return restar(numero1, numero2);
+    } else if (operacion === "multiplicar") {
+      return multiplicar(numero1, numero2);
+    } else if (operacion === "dividir") {
+        if(numero2 === 0){
+          return "No se puede dividir por 0"
+        }
+      return dividir(numero1, numero2);
+    } else {
+      return "Operación no válida";
+    }
+  }
+  
+/**
+ * Ejercicios de recursividad
+ * 1. Crea una función que imprima la potencia de un número elevado a otro número.
+ * 2. Crea una función que reciba un número y retorne el factorial de ese número.
+ * 3. Crea una función que imprima la sucesion de Fibonacci hasta el número que se le pase
+ * como parametro.
+ */
+
+const msg = "What kind of thing are you tryng to put in the function? You, monster..."
+
+function isNumber(input) {
+  if (typeof (input) !== "number") {
+    return false
+  } else {
+    return true
+  }
+};
+
+
+function power(x, y) {
+  if ((isNumber(x) == true) && (isNumber(y) == true)) {
+    if (y === 0) {
+      return 1;
+    } else {
+      return x * power(x, y - 1);
+    };
+  } else return msg;
+};
+
+console.log("Power: " + power(2, 5)); // Expected result: 32
+
+function factorial(n) {
+  if (isNumber(n) == true) {
+    if ((n === 0) || (n === 1)) {
+      return 1;
+    } else {
+      return n * factorial(n - 1)
+    };
+  } else return msg;
+};
+
+console.log("Factorial: " + factorial(6)) // Expected result: 720
+
+// Fn = Fn-1 + Fn-2 ...
+function fibonacci(n) {
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+  else {
+    return fibonacci(n - 1) + fibonacci(n - 2)
+  };
+};
+
+function printFibonacci(n, current_n = 0) {
+  if (isNumber(n) == true) {
+    if (current_n == n + 1) return;
+    else {
+      console.log("Fibonacci (Iteration No. " + current_n + "): " + fibonacci(current_n))
+      printFibonacci(n, current_n + 1) // cosorro
+    };
+  } else return msg;
+};
+
+// Expected result: 0… 1… 2… 3… 5… 8… 13… 21… 34… 55… 89… 144…
+// Current result: 0… 1… 2… 3… 5… 8… 13… 21… 34… 55… 89… 144… Undefined ... Pls, forgive us
+console.log(printFibonacci(12))
