@@ -276,3 +276,110 @@ function printFibonacci(n, current_n = 0) {
 // Expected result: 0… 1… 2… 3… 5… 8… 13… 21… 34… 55… 89… 144…
 // Current result: 0… 1… 2… 3… 5… 8… 13… 21… 34… 55… 89… 144… Undefined ... Pls, forgive us
 console.log(printFibonacci(12))
+
+console.log("Hola MUndo".length);
+
+/*
+  En un objeto hay propiedades y metodos
+  Las propiedades devuelven un valor que puede ser string, number, boolean etc
+  metodos ejecutan una funcion
+*/
+
+//Metodos de strings
+
+
+/*
+  En un objeto hay propiedades y metodos
+  Las propiedades devuelven un valor que puede ser string, number, boolean, etc.
+  Los metodos ejecutan una funcion
+*/
+
+//Metodos de strings
+var texto = "Hola, soy un texto";
+//Transformar un string a mayusculas
+console.log(texto.toUpperCase());
+//Transformar un string a minusculas
+console.log(texto.toLowerCase());
+//Obtiene la posicion de una palabra en un string
+console.log(texto.indexOf("soy"));
+//Corta un string
+console.log(texto.slice(5, 8));
+//Divide un string en un array
+console.log(texto.split(" "));
+//Reemplaza una palabra por otra
+console.log(texto.replace("Hola", "Adios"));
+//Reemplaza todas las ocurrencias de una palabra por otra
+console.log(texto.replaceAll("o", "0"));
+//Verifica si un string incluye una palabra
+console.log(texto.includes("Hola"));
+//Verifica si un string empieza con una palabra
+console.log(texto.startsWith("Hola"));
+//Verifica si un string termina con una palabra
+console.log(texto.endsWith("texto"));
+//Obtiene la posicion de un caracter en un string
+console.log(texto.charAt(-2));
+//Obtiene el codigo ASCII de un caracter
+console.log(texto.charCodeAt(2));
+//Recorta los espacios en blanco de un string
+console.log("  Hola, soy un texto   ".trim());
+//Repite un string
+console.log(texto.repeat(3));
+//Concatena dos strings
+console.log(texto.concat(" y yo soy otro texto"));
+// texto + " y yo soy otro texto"
+
+//Ejercicios de metodos de strings
+//1. Crea una función que reciba un string y devuelva la cantidad de caracteres que tiene.
+//2. Crea una función que reciba un string y devuelva la cantidad de palabras que tiene.
+//3. Crea una función que reciba un string y devuelva el string invertido. (Hola -> aloH) (Utiliza recursividad)
+//4. Verifica si un string es un palindromo (se lee igual de izquierda a derecha que de derecha a izquierda)
+
+
+function contarCaracteres(contador) {
+  return contador.length;
+}
+console.log(contarCaracteres("Hola soy Gianmario"));
+
+function contarPalabra(contadorPalabras) {
+  return contadorPalabras.split(" ").length;
+}
+console.log(contarPalabra("Hola soy Gian"));
+
+
+
+function invertirPalabra (Palabra){
+  if  (Palabra.length === 0){
+    return "";
+  }
+  else {
+    return invertirPalabra(Palabra.slice(1)) + Palabra.charAt(0);
+  }
+}
+console.log(invertirPalabra("Antonia"))
+
+function palindromo(texto, texto_invertido){
+texto_invertido = texto.slice(1) + texto.charAt(0);
+  if (texto === texto_invertido){
+    return "Es un palindromo";
+  }
+  else{
+    return "No lo es";
+  }
+} 
+console.log(palindromo("ono"));
+
+
+
+
+
+
+/*
+var palabra = "oso";
+var palabraInvertida = palabra.slice(1) + palabra.charAt(0);
+  if (palabra === palabraInvertida){
+    console.log(true);
+  } else (palabra!= palabraInvertida){
+    console.log(false);
+  }
+
+*/
