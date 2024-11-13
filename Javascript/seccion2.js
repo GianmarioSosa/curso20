@@ -1155,7 +1155,7 @@ console.error("Hola, soy un mensaje de error");
   de tareas.
 
   El programa debe de tener las siguientes clases:
-  - Tarea
+    - Tarea
     - Propiedades: nombre, descripcion, fecha, completada
 
   - ListaTareas
